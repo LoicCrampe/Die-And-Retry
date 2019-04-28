@@ -1,0 +1,104 @@
+#page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+/***************************** HEADER *********************************/
+header {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: auto;
+    max-width: 60%;
+}
+
+/***************************** Page de connexion *********************************/
+.connexion {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#ButConnexion {
+    margin-top: 10px;
+}
+
+/******************************** LISTE DES JEUX ********************************/
+/************************* Barre de recherche *************************/
+#Recherche {
+    margin: 5px 0;
+}
+
+/**************** Div qui contient la liste des membres ****************/
+#ListeDeJeux {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.Largeur {
+    display: none;
+}
+
+/**************** Boutons Ajouter/Modifier/Supprimer ****************/
+
+.ButAMS {
+    margin: 10px;
+}
+
+/***************************** FOOTER *********************************/
+footer {
+    background: black;
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/******************************* Media Queries ******************************/
+
+@media screen and (min-width: 768px) {
+    #ListeDeJeux {
+        max-height: 700px;
+        overflow-y: scroll;
+    }
+
+    .Largeur {
+        display: table-cell;
+    }
+
+    .logo img {
+        height: auto;
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1199px) {
+
+    #ListeDeJeux {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+
+    .Largeur {
+        display: table-cell;
+    }
+
+    .logo img {
+        height: auto;
+        max-width: 40%;
+    }
+}
